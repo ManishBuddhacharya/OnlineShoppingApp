@@ -1,5 +1,6 @@
 package com.e.onlineshoppingapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -42,6 +43,8 @@ public class AddItemActivity extends AppCompatActivity {
             printstream.println(etName.getText().toString() +"->"+etPrice.getText().toString()+"->"+etImage.getText().toString()+"->"+etDescription.getText().toString());
             Toast.makeText(this, "Saved to "+getFilesDir(), Toast.LENGTH_LONG).show();
             printstream.close();
+            Intent intent = new Intent(AddItemActivity.this, DashboardActivity.class);
+            startActivity(intent);
         }
         catch (IOException e){
 

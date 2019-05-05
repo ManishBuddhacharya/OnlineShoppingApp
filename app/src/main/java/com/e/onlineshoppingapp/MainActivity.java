@@ -24,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        adapter.addFragments(new LoginFragment(),"Login");
-        adapter.addFragments(new SignupFragment(),"Sign Up");
+        adapter.addFragments(new LoginFragment(),"login");
+        adapter.addFragments(new SignupFragment(),"sign Up");
 
         viewpager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewpager);
+        tabLayout.getTabAt(0).setText("login");
+        tabLayout.getTabAt(1).setText("Signup");
     }
 }

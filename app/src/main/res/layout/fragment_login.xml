@@ -54,7 +54,7 @@
             android:backgroundTint="#4f80a4"
             android:hint="Email / Username"
 
-            android:textColorHint="#fff" />
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -75,7 +75,7 @@
             android:hint="Password"
             android:inputType="textPassword"
 
-            android:textColorHint="#fff" />
+            />
 
         <Button
             android:id="@+id/btnLogin"

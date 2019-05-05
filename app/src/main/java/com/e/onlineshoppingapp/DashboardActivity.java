@@ -60,7 +60,7 @@ public class DashboardActivity extends AppCompatActivity {
 
             while ((line = br.readLine()) != null){
                 String[] parts = line.split("->");
-                contactList.add(new Items(parts[0], parts[1], parts[2], this.getResources().getIdentifier(parts[3], "drawable", this.getPackageName())));
+                contactList.add(new Items(parts[0], parts[1], parts[3], this.getResources().getIdentifier(parts[2], "drawable", this.getPackageName())));
             }
         }
         catch (IOException e){
